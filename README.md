@@ -40,21 +40,21 @@ Supported keywords in configuration file:
 
 |   | Description | Not specified / Default|
 | ------------- | ------------- |-----------------|
-|command|command to execute|Must be specified|
-|numprocs|number of instances to run|1|
-|directory	|change to this directory on startup|do not change directory|
-|umask|umask to apply|022|
-|userid|userid to apply|do not change user|
-|autostart|autostart program|false|
-|autorestart|auto restart program|UNEXPECTED|
-|startsec|delay for marking process as running|1 (second)|
-|startretries|Number of restarts to try before FATAL state|3|
-|exitcodes|Explicit exitcodes; Used with "autorestart=UNEXPECTED"|0|
-|stopsignal|Signal to send to gracefully terminate instance|SIGTERM|
-|stopwaitsec|delay before killing stung process|3 (seconds)|
-|stderr_logfile|Explicit instance stderr logfile|AUTO|
-|stdout_logfile|Explicit instance stdout logfile|AUTO|
-|environment|Additional environment|empty|
+|**command**|command to execute|Must be specified|
+|**numprocs**|number of instances to run|1|
+|**directory**|change to this directory on startup|do not change directory|
+|**umask**|umask to apply|022|
+|**userid**|userid to apply|do not change user|
+|**autostart**|autostart program|false|
+|**autorestart**|auto restart program|UNEXPECTED|
+|**startsec**|delay for marking process as running|1 (second)|
+|**startretries**|Number of restarts to try before FATAL state|3|
+|**exitcodes**|Explicit exitcodes; Used with "autorestart=UNEXPECTED"|0|
+|**stopsignal**|Signal to send to gracefully terminate instance|SIGTERM|
+|**stopwaitsec**|delay before killing stung process|3 (seconds)|
+|**stderr_logfile**|Explicit instance stderr logfile|AUTO|
+|**stdout_logfile**|Explicit instance stdout logfile|AUTO|
+|**environment**|Additional environment|empty|
 
 ### Diagram
 #### Job control State machine
